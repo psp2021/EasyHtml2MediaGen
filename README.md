@@ -8,18 +8,28 @@ Image using html
 Image using any web url
 
 How to use the jar & code:
-
-#Step 1: Download both the jar from https://github.com/psp2021/EasyHtml2MediaGen/tree/main/jar to your local machine. i.e
+---------------------------------------------------------------------------------------------------------------------------------
+Step 1: 
+--------------------------
+Download both the jar from https://github.com/psp2021/EasyHtml2MediaGen/tree/main/jar to your local machine. i.e
       1.1 EasyHtml2MediaGen.jar
       1.2 org.apache.commons.io.jar
 
-#Step 2: Use any editor for java , like eclipse,STS ,etc and create a simple java project
-  
-#Step 3: Include the dowloaded jar in step 1, as libraries in the java build path.
+Step 2: 
+--------------------------
+Use any editor for java , like eclipse,STS ,etc and create a simple java project
 
-#Step 4: Create any java class in the project and write a simple main method
-  
-#Step 5: Now copy below code as per the scenario and try to execute the main class (Note : Kindly change the path of the files as per your system)
+Step 3: 
+--------------------------
+Include the dowloaded jar in step 1, as libraries in the java build path.
+
+Step 4: 
+--------------------------
+Create any java class in the project and write a simple main method
+
+Step 5: 
+--------------------------
+Now copy below code as per the scenario and try to execute the main class (Note : Kindly change the path of the files as per your system)
 
       Java code to execute and use the function within jar
 -------------------------------------------------------------------------------------------------
