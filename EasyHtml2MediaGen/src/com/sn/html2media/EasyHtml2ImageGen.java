@@ -103,7 +103,7 @@ public class EasyHtml2ImageGen {
 	 * @throws Exception
 	 */
 	public  void htmlFile2ImageWithStreams(final String sourcePath,final String destinationPath) throws Exception {
-        Process wkhtml;
+        Process html;
 
         File destinationFile = new File(destinationPath);
         File sourceFile = new File(sourcePath);
@@ -113,38 +113,38 @@ public class EasyHtml2ImageGen {
 
         String command = toolPath+" - -";
         
-        wkhtml = Runtime.getRuntime().exec(command);
+        html = Runtime.getRuntime().exec(command);
 
         Thread errThread = new Thread(() -> {
             try {
-                IOUtils.copy(wkhtml.getErrorStream(), System.err);
+                IOUtils.copy(html.getErrorStream(), System.err);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         });
-        Thread htmlReadThread = new Thread(() -> {
+        Thread htmlReadThrd = new Thread(() -> {
             try {
-                IOUtils.copy(fis, wkhtml.getOutputStream());
-                wkhtml.getOutputStream().flush();
-                wkhtml.getOutputStream().close();
+                IOUtils.copy(fis, html.getOutputStream());
+                html.getOutputStream().flush();
+                html.getOutputStream().close();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         });
-        Thread pdfWriteThread = new Thread(() -> {
+        Thread pdfWriteThrd = new Thread(() -> {
             try {
-                IOUtils.copy(wkhtml.getInputStream(), fos);
+                IOUtils.copy(html.getInputStream(), fos);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         });
 
         errThread.start();
-        pdfWriteThread.start();
-        htmlReadThread.start();
+        pdfWriteThrd.start();
+        htmlReadThrd.start();
 
         
-        wkhtml.waitFor(); // Allow process to run
+        html.waitFor(); // Allow process to run
     }
 	
 	/**
@@ -154,7 +154,7 @@ public class EasyHtml2ImageGen {
 	 * @throws Exception
 	 */
 	public  void html2ImageWithStream(final StringBuilder sourceHtml,final String destinationPath) throws Exception {
-        Process prhtml;
+        Process html;
 
         File destinationFile = new File(destinationPath);
 
@@ -163,37 +163,38 @@ public class EasyHtml2ImageGen {
 
         String command = toolPath+" - -";
         
-        prhtml = Runtime.getRuntime().exec(command);
+        html = Runtime.getRuntime().exec(command);
 
         Thread errThread = new Thread(() -> {
             try {
-                IOUtils.copy(prhtml.getErrorStream(), System.err);
+                IOUtils.copy(html.getErrorStream(), System.err);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         });
         Thread htmlReadThread = new Thread(() -> {
             try {
-                IOUtils.copy(fis, prhtml.getOutputStream());
-                prhtml.getOutputStream().flush();
-                prhtml.getOutputStream().close();
+                IOUtils.copy(fis, html.getOutputStream());
+                html.getOutputStream().flush();
+                html.getOutputStream().close();
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         });
-        Thread pdfWriteThread = new Thread(() -> {
+        Thread pdfWriteThrd = new Thread(() -> {
             try {
-                IOUtils.copy(prhtml.getInputStream(), fos);
+                IOUtils.copy(html.getInputStream(), fos);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
         });
 
         errThread.start();
-        pdfWriteThread.start();
+        pdfWriteThrd.start();
         htmlReadThread.start();
 
         
-        prhtml.waitFor(); // Allow process to run
+        html.waitFor(); // Allow process to run
     }
 }
+
