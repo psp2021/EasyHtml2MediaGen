@@ -16,8 +16,8 @@ How to use the jar & code:
 Step 1: 
 --------------------------
 Download both the jar from https://github.com/psp2021/EasyHtml2MediaGen/tree/main/jar to your local machine. i.e
-      1.1 EasyHtml2MediaGen.jar
-      1.2 org.apache.commons.io.jar
+      1 EasyHtml2MediaGen.jar
+      2 org.apache.commons.io.jar
 
 Step 2: 
 --------------------------
