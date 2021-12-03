@@ -36,7 +36,7 @@ easyHtml2PdfGen.urlToPdf("https://en.wikipedia.org/wiki/Springer_Nature","D:\\fi
 3. SAMPLE JAVA CODE for HTML-FILE 2 PDF
 -----------------------------------------------------------------------------------------------------------------
 EasyHtml2PdfGen easyHtml2PdfGen = 		EasyHtml2PdfGen.buildEasyHtmlGen()
-easyHtml2PdfGen.htmlFile2PdfWithStreams("D:\\files\\demo.html","D:\\files\\output3.pdf");
+easyHtml2PdfGen.htmlFile2PdfWithStreams("D:\\files\\demo.html","D:\\files\\output3.pdf");//demo.html should contain some html text to render
 
 
 4. SAMPLE JAVA CODE for HTML to Image
@@ -54,6 +54,6 @@ easyHtml2ImageGen.urlToImage("https://en.wikipedia.org/wiki/Springer_Nature", "D
 6. SAMPLE JAVA CODE for HTML-FILE to Image
 -----------------------------------------------------------------------------------------------------------------
 EasyHtml2ImageGen easyHtml2ImageGen = EasyHtml2ImageGen.buildEasyHtmlGen();
-easyHtml2ImageGen.htmlFile2ImageWithStreams("D:\\files\\demo.html", "D:\\files\\output3.jpg");
+easyHtml2ImageGen.htmlFile2ImageWithStreams("D:\\files\\demo.html", "D:\\files\\output3.jpg");//demo.html should contain some html text to render
 
 
