@@ -1,4 +1,5 @@
 # EasyHtml2MediaGen
+- no <html>
 EasyHtml2MediaGen
 This project will let you create:
 
