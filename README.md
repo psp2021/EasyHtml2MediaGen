@@ -10,7 +10,7 @@ Image using any web url
 
 
 
-<!--
+
 Java code to execute and use the function within jar
 -------------------------------------------------------------------------------------------------
 1. SAMPLE JAVA CODE for HTML to PDF
@@ -46,4 +46,4 @@ easyHtml2ImageGen.urlToImage("https://en.wikipedia.org/wiki/Springer_Nature", "D
 EasyHtml2ImageGen easyHtml2ImageGen = EasyHtml2ImageGen.buildEasyHtmlGen();
 easyHtml2ImageGen.htmlFile2ImageWithStreams("D:\\files\\demo.html", "D:\\files\\output3.jpg");
 
--->
+
