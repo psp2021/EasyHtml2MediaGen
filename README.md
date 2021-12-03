@@ -21,7 +21,8 @@ Step 3: Include the dowloaded jar in step 1, as libraries in the java build path
 Step 4: Create any java class in the project and write a simple main method
   
 Step 5: Now copy below code as per the scenario and try to execute the main class (Note : Kindly change the path of the files as per your system)
-Java code to execute and use the function within jar
+<!--- 
+      Java code to execute and use the function within jar
 -------------------------------------------------------------------------------------------------
 1. SAMPLE JAVA CODE for HTML to PDF
 -----------------------------------------------------------------------------------------------------------------
@@ -56,4 +57,4 @@ easyHtml2ImageGen.urlToImage("https://en.wikipedia.org/wiki/Springer_Nature", "D
 EasyHtml2ImageGen easyHtml2ImageGen = EasyHtml2ImageGen.buildEasyHtmlGen();
 easyHtml2ImageGen.htmlFile2ImageWithStreams("D:\\files\\demo.html", "D:\\files\\output3.jpg");
 
-
+--->
