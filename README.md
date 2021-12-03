@@ -43,7 +43,7 @@ easyHtml2PdfGen.htmlFile2PdfWithStreams("D:\\files\\demo.html","D:\\files\\outpu
 4. SAMPLE JAVA CODE for HTML to Image
 -----------------------------------------------------------------------------------------------------------------
 EasyHtml2ImageGen easyHtml2ImageGen = EasyHtml2ImageGen.buildEasyHtmlGen();
-easyHtml2ImageGen.html2ImageWithStream(new StringBuilder("<h1>Hello World!</h1>"), "D:\\files\\output1.jpg");
+easyHtml2ImageGen.html2ImageWithStream(new StringBuilder("<b>Hello World!</b>"), "D:\\files\\output1.jpg");
 
 
 5. SAMPLE JAVA CODE for WEB-URL to Image
