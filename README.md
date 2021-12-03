@@ -25,8 +25,8 @@ Java code to execute and use the function within jar
 -------------------------------------------------------------------------------------------------
 1. SAMPLE JAVA CODE for HTML to PDF
 -----------------------------------------------------------------------------------------------------------------
-#EasyHtml2PdfGen easyHtml2PdfGen = 		EasyHtml2PdfGen.buildEasyHtmlGen()
-#easyHtml2PdfGen.html2pdfWithStream(new StringBuilder("<h1>Hello World!</h1>"),"D:\\files\\output1.pdf");
+EasyHtml2PdfGen easyHtml2PdfGen = 		EasyHtml2PdfGen.buildEasyHtmlGen()
+easyHtml2PdfGen.html2pdfWithStream(new StringBuilder("<h1>Hello World!</h1>"),"D:\\files\\output1.pdf");
 
 2. SAMPLE JAVA CODE for WEB-URL to PDF
 -----------------------------------------------------------------------------------------------------------------
