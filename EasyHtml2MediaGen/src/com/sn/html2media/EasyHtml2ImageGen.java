@@ -89,12 +89,12 @@ public class EasyHtml2ImageGen {
 	 * @throws Exception
 	 */
 	public  void urlToImage(final String url,final String destinationPath) throws Exception {
-        Process prhtml;
+        Process html;
         String command = toolPath+" "+url+" "+destinationPath;
         prhtml = Runtime.getRuntime().exec(command);
-        IOUtils.copy(prhtml.getErrorStream(), System.err);
+        IOUtils.copy(html.getErrorStream(), System.err);
 
-        prhtml.waitFor();
+        html.waitFor();
     }
 	/**
 	 * 
